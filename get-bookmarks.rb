@@ -15,7 +15,7 @@ notebook            = noteStore.getNotebook(auth_token, notebook_guid)
 filter              = Evernote::EDAM::NoteStore::NoteFilter.new
 filter.notebookGuid = notebook_guid
 
-notes       = noteStore.findNotes(auth_token, filter, 0, 3);
+notes       = noteStore.findNotes(auth_token, filter, 0, 1000);
 noteStash   = {}
 
 noteStash['Notebook'] = {
